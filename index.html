@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EightEx</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220829201721"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220831173318"/>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                                 <a href="#" class="header__menu-link menu-link">Как мы работаем</a>
                             </li>
                             <li class="header__menu-item menu-item">
-                                <a href="#" class="header__menu-link menu-link">Оставить заявку</a>
+                                <a href="#popup" class="header__menu-link menu-link popup-link">Оставить заявку</a>
                             </li>
                             <li class="header__menu-item menu-item">
                                 <a href="#" class="header__menu-link menu-link">О компании</a>
@@ -339,6 +339,48 @@
                 </div>
             </section>
         </div>
+        <div class="popup" id="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__header">
+                        <h2 class="popup__title">Расчёт доставки груза</h2>
+                        <div class="popup__text">
+                            Заполните форму и получите ответ по смс
+                        </div>
+                    </div>
+                    <form action="#" class="popup__form">
+                        <div class="popup__item item-popup">
+                            <h3 class="item-popup__title">Какой товар нужно привезти?</h3>
+                            <p class="item-popup__text popup__text">Укажите наименование или категорию товара.</p>
+                            <input placeholder="Например: брюки, зонт, комплектующие для станка." type="text" class="item-popup__field form__input">
+                        </div>
+                        <div class="popup__item item-popup">
+                            <h3 class="item-popup__title">Вес, кг</h3>
+                            <p class="item-popup__text popup__text">
+                                Укажите примерный общий вес товара с упаковкой. Если не знаете вес упаковки, укажите вес без её учета.
+                            </p>
+                            <input placeholder="Например: 100" type="text" class="item-popup__field form__input">
+                        </div>
+                        <div class="popup__item item-popup">
+                            <h3 class="item-popup__title">Объём, м3</h3>
+                            <p class="item-popup__text popup__text">
+                                Укажите общий объём с упаковкой. Если не знаете объём упаковки, укажите объём без её учёта.
+                            </p>
+                            <input placeholder="Например: 0,7" type="text" class="item-popup__field form__input">
+                        </div>
+                        <div class="popup__item item-popup">
+                            <h3 class="item-popup__title">Ваше имя</h3>
+                            <input placeholder="Имя" type="text" class="item-popup__field form__input">
+                        </div>
+                        <div class="popup__item item-popup">
+                            <h3 class="item-popup__title">Ваш телефон</h3>
+                            <input placeholder="В формате 81234567890" type="tel" class="item-popup__field form__input">
+                        </div>
+                        <button type="submit" class="item-popup__btn button">Оставить заявку</button>
+                    </form>
+                 </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
     <div class="footer__container container">
@@ -386,7 +428,7 @@
         </div>
     </div>
 </footer>
-    <script src="js/app.min.js?_v=20220829201721"></script>
+    <script src="js/app.min.js?_v=20220831173318"></script>
 </body>
 
 </html>
