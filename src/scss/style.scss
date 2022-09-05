@@ -826,10 +826,13 @@ body {
             padding: rem(4) rem(7);
             font-weight: 500;
             color: #000000;
-            transition: background-color 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
             @include adaptive-value("font-size", 16, 13, 1);
-            &:hover {
-                background-color: lighten($accentColor, 5%);
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: #575757;
+                    color: #FFFFFF;
+                }
             }
         }
     }
